@@ -1,0 +1,112 @@
+<%- include('base/_header.html') %>
+
+<main>
+  <!-- SECTION product -->
+  <section class="product">
+    <div class="container">
+      <div class="product__breadcrumbs">
+        <a href="#" class="product__link">SKLEP</a><a href="##" class="product__link">/POŚCIEL</a><a href="###" class="product__link">/BAWEŁNA EGIPSKA</a><a href="####" class="product__link product__link--active">/SATINSTITCH</a>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="product__flex-container">
+        <div class="product__flex-item">
+          
+          <div class="product__thumbnail-wrapper button-group button-group--cells">
+            <img class="product__thumbnail-item button is-selected" src="assets/images/product-1-small.jpg" alt="product description">
+            <img class="product__thumbnail-item button" src="assets/images/product-2-large.jpg" alt="product description">
+            <img class="product__thumbnail-item button" src="assets/images/product-3-large.jpg" alt="product description">
+          </div>
+
+          <div class="carousel">
+            <div class="carousel-cell"><img class="product__zoom" src="assets/images/product-1-large.jpg" alt="detailed product description"></div>
+            <div class="carousel-cell"><img class="product__zoom" src="assets/images/product-2-large.jpg" alt="detailed product description"></div>
+            <div class="carousel-cell"><img class="product__zoom" src="assets/images/product-3-large.jpg" alt="detailed product description"></div>
+          </div>
+        </div>
+
+        <div class="product__flex-item">
+          <h1 class="product__h1">SATINSTITCH PLISSE</h1>
+          <p class="product__description">The design of this classic, understated coverlet was fashioned after an 18th-century French button Mary Ella found in an open air market. Our clients continue to purchase this pattern year over year. 100% long-staple cotton. Portugal.</p>
+          <div class="circles__container">
+            <span class="circles__item circles__item--gold"></span>
+            <span class="circles__item circles__item--silver"></span>
+            <span class="circles__item circles__item--dark"></span>
+          </div>
+
+          <!-- FORM -->
+          <form action="" method="post" class="form">
+
+            <!-- INPUT -->
+            <div class="form__container">
+              <label class="form__label" for="quantityStandard">STANDARD — 50x70 CM</label>
+              <div class="input__container">
+                <button class="input__button input__button--minus" data-name="decrement">-</button>
+                <input class="input__item" type="number" value="2" name="quantityStandard">
+                <button class="input__button input__button--plus input__button--centered" data-name="increment">+</button>
+              </div>
+              <div class="radio__container">
+                <input type="radio" id="radio-1-1" name="radio-1-set" class="radio__item" />
+                <label class="radio__label radio__label--gold" for="radio-1-1"></label>
+                <input type="radio" id="radio-1-2" name="radio-1-set" class="radio__item" />
+                <label class="radio__label radio__label--silver" for="radio-1-2"></label>
+                <input type="radio" id="radio-1-3" name="radio-1-set" class="radio__item" checked />
+                <label class="radio__label radio__label--dark" for="radio-1-3"></label>
+              </div>
+              <span class="form__price">560 ZŁ</span>
+            </div>
+
+            <!-- INPUT -->
+            <div class="form__container">
+              <label class="form__label" for="quantityLarge">LARGE — 50x70 CM</label>
+              <div class="input__container">
+                <button class="input__button" data-name="decrement">-</button>
+                <input class="input__item" type="number" value="2" disabled name="quantityLarge" id="POSTquantityLarge">
+                <button class="input__button input__button--centered" data-name="increment">+</button>
+              </div>
+              <div class="radio__container">
+                <input type="radio" id="radio-2-1" name="radio-2-set" class="radio__item" checked />
+                <label class="radio__label radio__label--gold" for="radio-2-1"></label>
+                <input type="radio" id="radio-2-2" name="radio-2-set" class="radio__item" />
+                <label class="radio__label radio__label--silver" for="radio-2-2"></label>
+                <input type="radio" id="radio-2-3" name="radio-2-set" class="radio__item" />
+                <label class="radio__label radio__label--dark" for="radio-2-3"></label>
+              </div>
+              <span class="form__price">360 ZŁ</span>
+            </div>
+
+            <!-- INPUT -->
+            <div class="form__container form__container--no-border">
+              <label class="form__label" for="quantitySmall">SMALL — 50x70 CM</label>
+              <div class="input__container">
+                  <button class="input__button" data-name="decrement">-</button>
+                  <input class="input__item" type="number" value="2" disabled name="quantitySmall" id="POSTquantitySmall">
+                  <button class="input__button input__button--centered" data-name="increment">+</button>
+                </div>
+              <div class="radio__container">
+                <input type="radio" id="radio-3-1" name="radio-3-set" class="radio__item" />
+                <label class="radio__label radio__label--gold" for="radio-3-1"></label>
+                <input type="radio" id="radio-3-2" name="radio-3-set" class="radio__item" />
+                <label class="radio__label radio__label--silver" for="radio-3-2"></label>
+                <input type="radio" id="radio-3-3" name="radio-3-set" class="radio__item" checked />
+                <label class="radio__label radio__label--dark" for="radio-3-3"></label>
+              </div>
+              <span class="form__price">260 ZŁ</span>
+            </div>
+
+            <!-- SUBMIT -->
+            <div class="submit__container">
+              <div class="submit__wrapper">
+                <input class="submit__item" type="submit" value="ADD TO CART">
+                <img class="submit__icon" src="assets/images/arrow.png" alt="arrow symbol">
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('base/_footer.html') %>

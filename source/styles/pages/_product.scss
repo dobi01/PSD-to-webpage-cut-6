@@ -1,0 +1,232 @@
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.product {
+  width: 100vw;
+  background-color: #fafafa;
+  height: 610px;
+  &__link {
+    color: $gray2;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+    &--active {
+      color: $gray3;
+    }
+  }
+  &__flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__flex-item {
+    flex-basis: 47%;
+    height: 500px;
+  }
+  &__thumbnail {
+    &-wrapper {
+      float: left;
+      width: 80px;
+      margin-top: 30px;
+    }
+    &-item {
+      padding-bottom: 10px;
+      z-index: 10;
+      position: relative;
+      cursor: pointer;
+      object-fit: cover;
+      width: 80px;
+    }
+  }
+  &__zoom {
+    float: right;
+    margin-top: 30px;
+    object-fit: cover;
+    width: 400px;
+  }
+  &__h1 {
+    margin: 19px 0 16px;
+    color: $gray3;
+    font-family: 'K2D', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__description {
+    color: $gray4;
+    font-size: .9rem;
+    line-height: 1.45rem;
+    margin: 0 0 30px;
+  }
+}
+
+.carousel-cell {
+  width: 100% !important; 
+}
+
+.form {
+  &__container {
+    position: relative;
+    height: 65px;
+    border-bottom: 1px solid $gray7;
+    &--no-border {
+      border: none;
+    }
+  }
+  &__label {
+    color: $gray2;
+    font-size: .85rem;
+    letter-spacing: 2px;
+    display: block;
+    margin: 18px 0 8px;
+  }
+  &__price {
+    float: right;
+    color: $gray3;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+  }
+}
+
+.input {
+  &__container {
+    width: 75px;
+    height: 30px;
+    background-color: $gray7;
+    float: left;
+    margin-right: 20px;
+  }
+  &__item {
+    width: 22px;
+    background-color: $gray7;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    vertical-align: top;
+    font-size: 1.05rem;
+    padding: 0 1px;
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+  }
+  &__button {
+    width: 22px;
+    background-color: $gray7;
+    color: $gray2;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 0 1px 4px;
+    &--centered {
+      padding: 0 1px;
+      height: 29px;
+    }
+  }
+}
+
+.submit {
+  &__container {
+    width: 230px;
+    height: 55px;
+    background-color: $gold;
+    margin: 15px 0 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  &__wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 155px;
+    height: 20px;
+  }
+  &__item {
+    border: none;
+    color: $white;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    background: $gold;
+    display: inline-block;
+    top: -3px;
+    height: 20px;
+    position: relative;
+  }
+  &__icon {
+    float: right;
+    margin-top: 7px;
+  }
+}
+
+.radio {
+  &__container {
+    height: 12px;
+    display: inline-block;
+    padding-top: 5px;
+  }
+  &__item {
+    display: none;
+    &:checked + .radio__label {
+      opacity: 1;
+    }
+  }
+  &__label {
+    -webkit-appearance: none;
+    background-color: #000;
+    border-radius: 50%;
+    width: 100%;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+    opacity: .5;
+    &--gold {
+      background-color: $gold;
+    }
+    &--silver {
+      background-color: $gray6;
+    }
+    &--dark {
+      background-color: $gray5;
+    }
+  }
+}
+
+.circles {
+  &__container {
+    height: 12px;
+    margin-bottom: 35px;
+  }
+  &__item {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2px;
+    &--gold {
+      background-color: $gold;
+    }
+    &--silver {
+      background-color: $gray6;
+    }
+    &--dark {
+      background-color: $gray5;
+    }
+  }
+}
+
